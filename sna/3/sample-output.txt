@@ -1,0 +1,32 @@
+
+  0   1   2   3 
+ 16 142 126 255 
+# A tibble: 2 x 3
+  gender avg_age members
+  <fct>    <dbl>   <int>
+1 F         60.6     147
+2 M         60.5     392
+
+Call:
+lm(formula = n_accounts ~ type + age + party + gender, data = members)
+
+Residuals:
+-2.8833 -0.5233  0.1167  0.6148  1.8355 
+
+Coefficients:
+(Intercept)      -0.154019   0.187088  -0.823  0.41074    
+typesen           0.246036   0.088388   2.784  0.00557 ** 
+age               0.034974   0.002882  12.137  < 2e-16 ***
+partyIndependent -0.215579   0.558702  -0.386  0.69976    
+partyRepublican  -0.220378   0.070167  -3.141  0.00178 ** 
+genderM           0.343106   0.078223   4.386 1.39e-05 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.7779 on 533 degrees of freedom
+Multiple R-squared:  0.2814,	Adjusted R-squared:  0.2747 
+F-statistic: 41.74 on 5 and 533 DF,  p-value: < 2.2e-16
+
+Age coefficient: 0.035   p-value: 0 
+Interpretation: holding type, party and gender constant, each extra year of age changes the
+ expected number of social media accounts by 0.035 (about 0.35 per 10 years).

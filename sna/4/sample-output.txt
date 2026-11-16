@@ -1,0 +1,26 @@
+
+# A tibble: 5 x 2
+  text                                                                  mentions
+  <chr>                                                                    <int>
+1 ". @SenJohnKennedy said reforming the National Flood Insurance Progr~        1
+2 "On @AmericaNewsroom Wednesday, @SenJohnKennedy said those who commi~        2
+3 "GOP leaders must stop burying their heads in the sand. If this isn\~        0
+4 "#GOP moving ahead w/ plans to shred the social safety net. Does tha~        1
+5 "I spoke to @NPRinskeep this morning about the President\u2019s lack~        1
+Correlation (mentions vs favorites): -0.0185 
+
+	Pearson's product-moment correlation
+
+data:  tweets$mentions and tweets$favorite_count
+t = -0.58149, df = 988, p-value = 0.561
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ -0.08070917  0.04385943
+sample estimates:
+-0.01849665 
+
+# A tibble: 2 x 3
+  gender avg_mentions tweets
+  <fct>         <dbl>  <int>
+1 F             0.523    155
+2 M             0.702    598

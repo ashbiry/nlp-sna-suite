@@ -1,0 +1,25 @@
+(Part 0 API call: needs internet; in Colab prints 'Status code: 200' and a table of 10 users.)
+
+# A tibble: 6 x 4
+  full_name        gender created_at          retweet_count
+  <chr>            <fct>  <dttm>                      <int>
+1 John Kennedy     M      2018-06-05 18:56:02             1
+2 John Kennedy     M      2018-10-04 15:14:28           104
+3 Chris Van Hollen M      2018-04-11 03:12:32           194
+4 Chris Van Hollen M      2012-04-17 18:01:26            12
+5 Chris Van Hollen M      2018-01-19 16:03:00            40
+6 Chris Van Hollen M      2013-01-18 15:48:45             4
+Senators with a Twitter handle listed: 98 
+Of those, accounts found (have tweets in the data): 76 
+# A tibble: 2 x 3
+  gender avg_tweets senators
+  <fct>       <dbl>    <int>
+1 F            9.69       16
+2 M            9.97       60
+Correlation (age vs first tweet date): 0.04 
+Tweets selected: 151 
+# A tibble: 2 x 3
+  gender avg_retweets tweets
+  <fct>         <dbl>  <int>
+1 F              200.     32
+2 M              211.    119

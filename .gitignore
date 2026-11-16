@@ -1,0 +1,6 @@
+EXAM-PREP.md
+.ipynb_checkpoints/
+.Rhistory
+.RData
+*.Rproj.user
+__pycache__/

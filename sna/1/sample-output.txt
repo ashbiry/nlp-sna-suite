@@ -1,0 +1,44 @@
+
+  bioguide_id            full_name type    party state  birthdate gender
+1     B000944        Sherrod Brown  sen Democrat    OH 1952-11-09      M
+2     C000127       Maria Cantwell  sen Democrat    WA 1958-10-13      F
+3     C000141   Benjamin L. Cardin  sen Democrat    MD 1943-10-05      M
+4     C000174     Thomas R. Carper  sen Democrat    DE 1947-01-23      M
+5     C001070 Robert P. Casey, Jr.  sen Democrat    PA 1960-04-13      M
+6     F000062     Dianne Feinstein  sen Democrat    CA 1933-06-22      F
+  birthyear
+1      1952
+2      1958
+3      1943
+4      1947
+5      1960
+6      1933
+# A tibble: 6 x 5
+  thomas_id bioguide_id party     rank title   
+  <chr>     <chr>       <fct>    <int> <chr>   
+1 SSAF      S000770     majority     1 Chairman
+2 SSAF      L000174     majority     2 <NA>    
+3 SSAF      B000944     majority     3 <NA>    
+4 SSAF      K000367     majority     4 <NA>    
+5 SSAF      B001267     majority     5 <NA>    
+6 SSAF      G000555     majority     6 <NA>    
+# A tibble: 6 x 3
+  bioguide_id.x bioguide_id.y n_committees
+  <chr>         <chr>                <int>
+1 A000055       A000369                  1
+2 A000055       A000371                  1
+3 A000055       B000490                  1
+4 A000055       B001286                  1
+5 A000055       C000059                  1
+6 A000055       C001051                  1
+Vertices: 539 
+Edges: 22453 
+Edges (3+ shared committees): 179 
+W000437    Roger F. Wicker      9
+B001277 Richard Blumenthal      9
+B000575          Roy Blunt      9
+M000934        Jerry Moran      9
+K000367      Amy Klobuchar      8
+Members shown: 112 
+Senators (vertices): 100 
+Edges between senators: 3187 
